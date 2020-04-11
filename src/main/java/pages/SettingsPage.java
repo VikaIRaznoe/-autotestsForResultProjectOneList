@@ -22,7 +22,6 @@ public class SettingsPage {
     }
 
     public String versionAppСheck(){
-        System.out.println(waitForElementPresentRefact(elementAboutVersionApp,5).getText());
-       return waitForElementPresentRefact(elementAboutVersionApp,5).getText();
+        return waitForElementPresentRefact(elementAboutVersionApp,5).getText();
     }
 }

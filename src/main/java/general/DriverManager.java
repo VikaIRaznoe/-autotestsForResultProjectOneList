@@ -11,7 +11,6 @@ public class DriverManager {
         return driver;
     }
 
-    //Я убрала MobileElement,как тип AndroidDriver(треугольные скобки) и тесты пошли
     public static void initializeDriver(URL url, DesiredCapabilities capabilities){
         driver = new AndroidDriver<MobileElement>(url, capabilities);
     }

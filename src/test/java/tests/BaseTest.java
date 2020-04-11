@@ -21,6 +21,7 @@ public class BaseTest {
         caps.setCapability("appPackage","com.lolo.io.onelist");
         caps.setCapability("appActivity","com.lolo.io.onelist.MainActivity");
         caps.setCapability("app","/Users/viktoria/IdeaProjects/Java/NextDeveloping/FinalProject/src/test/resources/Apps/com.lolo.io.onelist_12.apk");
+//        caps.setCapability("app","./Apps/com.lolo.io.onelist_12.apk");
 
         URL appiumURL = new URL("http://127.0.0.1:4723/wd/hub");
         DriverManager.initializeDriver(appiumURL, caps);
@@ -28,10 +29,5 @@ public class BaseTest {
     @AfterClass
     public void  tearDown() {
         DriverManager.getDriver().quit();
-    }
-
-    @AfterMethod
-    public void takeScreenshot(){
-
     }
 }

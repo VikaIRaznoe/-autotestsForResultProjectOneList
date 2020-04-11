@@ -73,8 +73,8 @@ public class MainPage {
     }
 
     public void searchingElementInList(String Reminder){
-       WebElement element = waitForElementPresentRefact(By.xpath("//*[contains(@text,\'Reminder\')]"),5);
-       element.click();
+        WebElement element = waitForElementPresentRefact(By.xpath("//*[contains(@text,\'Reminder\')]"),5);
+        element.click();
     }
 
     public void clickButtonShare(){

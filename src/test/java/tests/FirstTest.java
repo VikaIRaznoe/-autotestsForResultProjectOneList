@@ -1,7 +1,9 @@
 package tests;
 
+import general.ListenerTestClass;
 import io.qameta.allure.*;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.MainPage;
 import pages.SettingsPage;
@@ -9,7 +11,7 @@ import pages.SettingsPage;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 
-
+@Listeners(ListenerTestClass.class)
 public class FirstTest extends BaseTest{
     MainPage mainPage = new MainPage();
     SettingsPage settingsPage = new SettingsPage();
