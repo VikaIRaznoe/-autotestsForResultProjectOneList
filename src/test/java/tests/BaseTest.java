@@ -22,7 +22,7 @@ public class BaseTest {
         caps.setCapability("deviceName","emulator-5554");
         caps.setCapability("appPackage","com.lolo.io.onelist");
         caps.setCapability("appActivity","com.lolo.io.onelist.MainActivity");
-        caps.setCapability("app","/Users/viktoria/IdeaProjects/Java/NextDeveloping/FinalProject/src/test/resources/Apps/com.lolo.io.onelist_12.apk");
+//        caps.setCapability("app","/Users/viktoria/IdeaProjects/Java/NextDeveloping/FinalProject/src/test/resources/Apps/com.lolo.io.onelist_12.apk");
 //        caps.setCapability("app","./Apps/com.lolo.io.onelist_12.apk");
         caps.setCapability("app",app.getAbsolutePath());
 
