@@ -3,14 +3,16 @@ package tests;
 import general.DriverManager;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 
 public class BaseTest {
+
+    private File app = new File("src/test/resources/Apps/com.lolo.io.onelist_12.apk");
 
     @BeforeClass
     public void setUp() throws MalformedURLException {
@@ -22,6 +24,7 @@ public class BaseTest {
         caps.setCapability("appActivity","com.lolo.io.onelist.MainActivity");
         caps.setCapability("app","/Users/viktoria/IdeaProjects/Java/NextDeveloping/FinalProject/src/test/resources/Apps/com.lolo.io.onelist_12.apk");
 //        caps.setCapability("app","./Apps/com.lolo.io.onelist_12.apk");
+        caps.setCapability("app",app.getAbsolutePath());
 
         URL appiumURL = new URL("http://127.0.0.1:4723/wd/hub");
         DriverManager.initializeDriver(appiumURL, caps);
